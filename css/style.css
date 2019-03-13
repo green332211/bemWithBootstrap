@@ -66,6 +66,7 @@ ul, li {
 .button__full {
     background: #00897b;
     border: 2px solid #00897b;
+    cursor: pointer;
 }
 
 .button__empty:hover,
@@ -100,4 +101,52 @@ ul, li {
     margin-bottom: 20px;
     font-family: 'Open Sans Semibold';
     font-size: 20px;
+}
+
+/* Наши услуги */
+
+.services {
+    color: black;
+    background: #e4fdf9;
+    text-align: center;
+    padding-top: 165px;
+    padding-bottom: 125px;
+}
+
+.our_card {
+    background: white;
+    padding: 50px 25px 40px;
+    transition: 0.3s;
+}
+
+.our_card >.about__text {
+    transition: 0.3s;
+}
+
+.our_card:hover {
+    background: #00897b;
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+.our_card:hover .icon {
+    color: white;    
+}
+
+.our_card:hover p {
+    color: white;
+}
+
+.icon {
+    transition: 0.3s;
+    font-size: 60px;
+    color: black;
+}
+
+.button_services {
+    text-transform: uppercase;
+    border: 1px solid black;
+    background: transparent;
+    padding: 10px 12px 10px;
+    font-family: 'Open Sans Semibold';
 }
