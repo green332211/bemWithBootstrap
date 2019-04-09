@@ -33,7 +33,7 @@ ul, li {
 
 /*Шапка*/
 
-.header >div {
+.header {
     color: white;
     padding: 180px 0;
     text-align: center;
@@ -52,27 +52,18 @@ ul, li {
 }
 
 .button {
+    cursor: pointer;
     padding: 10px 25px;
     margin: 0 10px;
     color: white;
     transition: 0.3s;
-}
-
-.button__empty {
-    background: transparent;
-    border: 2px solid white;
-}
-
-.button__full {
     background: #00897b;
     border: 2px solid #00897b;
-    cursor: pointer;
 }
 
-.button__empty:hover,
-.button__full:hover {
+.button:hover {
+    background: transparent;
     border: 2px solid white;
-    background: #055c53;
 }
 
 /* О нас */
@@ -115,8 +106,9 @@ ul, li {
 
 .our_card {
     background: white;
-    padding: 50px 25px 40px;
+    padding: 50px 40px 40px;
     transition: 0.3s;
+    margin-bottom: 30px; 
 }
 
 .our_card >.about__text {
@@ -137,16 +129,27 @@ ul, li {
     color: white;
 }
 
+.our_card:hover .button-services {
+    border: 1px solid white;
+    color: white;
+}
+
 .icon {
     transition: 0.3s;
     font-size: 60px;
     color: black;
 }
-
-.button_services {
+ 
+.button-services {
+    color: black;
+    transition: 0.3s; 
     text-transform: uppercase;
     border: 1px solid black;
     background: transparent;
     padding: 10px 12px 10px;
-    font-family: 'Open Sans Semibold';
+    font-family: 'Open Sans Semibold'; 
+}
+
+.button-services:hover {
+    cursor: pointer;
 }
